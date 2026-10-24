@@ -1,25 +1,75 @@
 aid: nyrahealth
+
 name: NyraHealth
-description: 'NyraHealth is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by crane-venture-partners) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.nyra.health/images/68ad62e815225ebf5f34ef6c_preview.png
+
+description: 'NyraHealth provides AI‑powered digital neurotherapy solutions for neurological disorders, offering personalized training programs for language, memory and everyday skills. Their platform is used in over 100 clinics and reaches more than 40 million users worldwide, supporting patients, clinicians and professionals with evidence‑based therapy accessible via web and mobile apps.'
+
 url: https://raw.githubusercontent.com/api-evangelist/nyrahealth/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-24'
+
 modified: '2026-10-24'
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Homepage redirects via JavaScript to /lander, preventing access to API documentation.
+  evidence:
+    - url: https://nyrahealth.com
+      status: 200
+  checked: '2026-10-24'
+
 tags:
 - Company
-apis: []
+- AI
+- Neurotherapy
+- DigitalHealth
+- Healthcare
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+common:
+- type: Conformance
+  url: conformance/nyrahealth-conformance.yml
+- type: Hosts
+  url: hosts/nyrahealth-hosts.yml
+- type: Vendors
+  url: vendors/nyrahealth-vendors.yml
+- type: DomainSecurity
+  url: security/nyrahealth-domain-security.yml
+- type: Website
+  url: https://www.nyra.health/en
+- type: Documentation
+  url: https://www.nyra.health/en
+- type: About
+  url: https://www.nyra.health/en/about-us
+- type: PrivacyPolicy
+  url: https://www.nyra.health/en/privacy-policy
+- type: TermsOfService
+  url: https://www.nyra.health/en/terms
+
+apis: []
+
 x-backed-by:
 - crane-venture-partners
-common:
-- type: Website
-  url: https://www.nyra.health/en-us
+x-enrichment:
+  date: '2026-10-24'
+  status: enriched
+  artifacts_added: 11
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

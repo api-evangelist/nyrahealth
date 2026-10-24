@@ -1,0 +1,16 @@
+generated: '2026-10-24'
+method: probed
+source: https://www.nyra.health/en/privacy-policy
+signals:
+  subprocessors:
+    - source: https://www.nyra.health/en/privacy-policy
+      http_status: 200
+      fetched: true
+      quote: "We use the following service providers as processors: Google Firebase, HubSpot, RevenueCat, Amplitude"
+      note: Lists third‑party processors handling user data.
+  ai_transparency:
+    - source: https://www.nyra.health/en/privacy-policy
+      http_status: 200
+      fetched: true
+      quote: "To improve our services and train our AI models, voice recordings are used exclusively in anonymized form so that no conclusions can be drawn about individual persons."
+      note: States that AI training uses anonymized data only.

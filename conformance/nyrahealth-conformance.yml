@@ -1,0 +1,16 @@
+generated: '2026-10-24'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.nyra.health/privacy-policy
+sources:
+- https://www.nyra.health/privacy-policy
+- https://www.nyra.health/privacy-policy-app
+- https://www.nyra.health/nyra-therapy/privacy-policy
+standards:
+- id: iso-27001
+  conforms: true
+  evidence: 'Zertifizierungen: ISO 13485 (Medizinprodukte-Qualitätsmanagement), ISO 27001 (Informationssicherheit)'
+- id: iso-27001
+  conforms: true
+  evidence: 'Zertifizierungen: ISO 13485 (Medizinprodukte-Qualitätsmanagement), ISO 27001 (Informationssicherheit)'
+docs: https://www.nyra.health/privacy-policy

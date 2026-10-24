@@ -1,0 +1,42 @@
+generated: '2026-10-24'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 2
+  own: 2
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - website
+hosts:
+- host: api.nyra.health
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: nyra.health
+  role: api
+  relation: own
+- host: www.nyra.health
+  found_by:
+  - pointer
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  - Documentation
+  - About
+  - PrivacyPolicy
+  - TermsOfService
+  serves:
+  - docs
+  - hosting
+  vendor: vercel
+  registrable_domain: nyra.health
+  role: website
+  relation: own
